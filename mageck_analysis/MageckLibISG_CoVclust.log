@@ -1,0 +1,96 @@
+INFO  @ Fri, 05 Jun 2020 14:51:39: Parameters: /mount/gensoft2/exe/mageck/0.5.9.2/bin/mageck test -k Mageck_input_table_names_corrected_new.txt -t Lib_isg_sort -c Lib_isg_ctrl -n MageckLibISG_CoVclust --pdf-report --keep-tmp --sort-criteria pos 
+INFO  @ Fri, 05 Jun 2020 14:51:39: Welcome to MAGeCK v0.5.9.2. Command: test 
+INFO  @ Fri, 05 Jun 2020 14:51:39: Loading count table from Mageck_input_table_names_corrected_new.txt  
+INFO  @ Fri, 05 Jun 2020 14:51:39: Processing 1 lines.. 
+DEBUG @ Fri, 05 Jun 2020 14:51:39: Parsing error in line 1 (usually the header line). Skip this line. 
+INFO  @ Fri, 05 Jun 2020 14:51:39: Loaded 15414 records. 
+INFO  @ Fri, 05 Jun 2020 14:51:39: Loading R template file: /local/gensoft2/exe/mageck/0.5.9.2/lib/python2.7/site-packages/mageck/plot_template.RTemplate. 
+INFO  @ Fri, 05 Jun 2020 14:51:39: Loading R template file: /local/gensoft2/exe/mageck/0.5.9.2/lib/python2.7/site-packages/mageck/plot_template_indvgene.RTemplate. 
+INFO  @ Fri, 05 Jun 2020 14:51:39: Loading Rnw template file: /local/gensoft2/exe/mageck/0.5.9.2/lib/python2.7/site-packages/mageck/plot_template.Rnw. 
+DEBUG @ Fri, 05 Jun 2020 14:51:39: Setting up the visualization module... 
+DEBUG @ Fri, 05 Jun 2020 14:51:39: Given sample labels: Lib_isg_sort 
+DEBUG @ Fri, 05 Jun 2020 14:51:39: Converted index: 1 
+INFO  @ Fri, 05 Jun 2020 14:51:39: Treatment samples:Lib_isg_sort 
+INFO  @ Fri, 05 Jun 2020 14:51:39: Treatment sample index:1 
+DEBUG @ Fri, 05 Jun 2020 14:51:39: Given sample labels: Lib_isg_ctrl 
+DEBUG @ Fri, 05 Jun 2020 14:51:39: Converted index: 0 
+INFO  @ Fri, 05 Jun 2020 14:51:39: Control samples:Lib_isg_ctrl 
+INFO  @ Fri, 05 Jun 2020 14:51:39: Control sample index:0 
+DEBUG @ Fri, 05 Jun 2020 14:51:39: Initial (total) size factor: 0.993943224846 1.00613104386 
+DEBUG @ Fri, 05 Jun 2020 14:51:39: Median factor: 0.986543356628 1.0142589062 
+INFO  @ Fri, 05 Jun 2020 14:51:39: Final size factor: 0.986543356628 1.0142589062 
+INFO  @ Fri, 05 Jun 2020 14:51:40: Detecting outliers from variance estimation.. Avg read count:[3869.5679126741566], Var: [5581982.32688607] 
+INFO  @ Fri, 05 Jun 2020 14:51:40: Skipping 79 sgRNAs from variance calculation because of their extreme high counts (> 4* STD (mean counts) ). 
+DEBUG @ Fri, 05 Jun 2020 14:51:40: Adjusted model: 1.12559222377	3.88922383176 
+INFO  @ Fri, 05 Jun 2020 14:51:40: Before RRA, 12 sgRNAs are removed with zero counts in both group(s). 
+INFO  @ Fri, 05 Jun 2020 14:51:40: Use qnorm to reversely calculate sgRNA scores ... 
+DEBUG @ Fri, 05 Jun 2020 14:51:40: lower test FDR cutoff: 0.377873003506 
+DEBUG @ Fri, 05 Jun 2020 14:51:41: higher test FDR cutoff: 0.383716400467 
+INFO  @ Fri, 05 Jun 2020 14:51:41: Running command: RRA -i MageckLibISG_CoVclust.plow.txt -o MageckLibISG_CoVclust.gene.low.txt -p 0.377873003506 --skip-gene NA --skip-gene na  
+INFO  @ Fri, 05 Jun 2020 14:51:43: Command message: 
+INFO  @ Fri, 05 Jun 2020 14:51:43:   Welcome to RRA v 0.5.9. 
+INFO  @ Fri, 05 Jun 2020 14:51:43:   Skipping gene NA for permutation ... 
+INFO  @ Fri, 05 Jun 2020 14:51:43:   Skipping gene na for permutation ... 
+INFO  @ Fri, 05 Jun 2020 14:51:43:   Reading input file... 
+INFO  @ Fri, 05 Jun 2020 14:51:43:   Summary: 15402 sgRNAs, 2105 genes, 1 lists; skipped sgRNAs:0 
+INFO  @ Fri, 05 Jun 2020 14:51:43:   Computing lo-values for each group... 
+INFO  @ Fri, 05 Jun 2020 14:51:43:   Computing false discovery rate... 
+INFO  @ Fri, 05 Jun 2020 14:51:43:   Permuting genes with 1 sgRNAs... 
+INFO  @ Fri, 05 Jun 2020 14:51:43:   Permuting genes with 5 sgRNAs... 
+INFO  @ Fri, 05 Jun 2020 14:51:43:   Permuting genes with 6 sgRNAs... 
+INFO  @ Fri, 05 Jun 2020 14:51:43:   Permuting genes with 7 sgRNAs... 
+INFO  @ Fri, 05 Jun 2020 14:51:43:   Permuting genes with 8 sgRNAs... 
+INFO  @ Fri, 05 Jun 2020 14:51:43:   Number of genes under FDR adjustment: 2105 
+INFO  @ Fri, 05 Jun 2020 14:51:43:   Saving to output file... 
+INFO  @ Fri, 05 Jun 2020 14:51:43:   RRA completed. 
+INFO  @ Fri, 05 Jun 2020 14:51:43:    
+INFO  @ Fri, 05 Jun 2020 14:51:43: End command message. 
+INFO  @ Fri, 05 Jun 2020 14:51:43: Running command: RRA -i MageckLibISG_CoVclust.phigh.txt -o MageckLibISG_CoVclust.gene.high.txt -p 0.383716400467 --skip-gene NA --skip-gene na  
+INFO  @ Fri, 05 Jun 2020 14:51:45: Command message: 
+INFO  @ Fri, 05 Jun 2020 14:51:45:   Welcome to RRA v 0.5.9. 
+INFO  @ Fri, 05 Jun 2020 14:51:45:   Skipping gene NA for permutation ... 
+INFO  @ Fri, 05 Jun 2020 14:51:45:   Skipping gene na for permutation ... 
+INFO  @ Fri, 05 Jun 2020 14:51:45:   Reading input file... 
+INFO  @ Fri, 05 Jun 2020 14:51:45:   Summary: 15402 sgRNAs, 2105 genes, 1 lists; skipped sgRNAs:0 
+INFO  @ Fri, 05 Jun 2020 14:51:45:   Computing lo-values for each group... 
+INFO  @ Fri, 05 Jun 2020 14:51:45:   Computing false discovery rate... 
+INFO  @ Fri, 05 Jun 2020 14:51:45:   Permuting genes with 1 sgRNAs... 
+INFO  @ Fri, 05 Jun 2020 14:51:45:   Permuting genes with 5 sgRNAs... 
+INFO  @ Fri, 05 Jun 2020 14:51:45:   Permuting genes with 6 sgRNAs... 
+INFO  @ Fri, 05 Jun 2020 14:51:45:   Permuting genes with 7 sgRNAs... 
+INFO  @ Fri, 05 Jun 2020 14:51:45:   Permuting genes with 8 sgRNAs... 
+INFO  @ Fri, 05 Jun 2020 14:51:45:   Number of genes under FDR adjustment: 2105 
+INFO  @ Fri, 05 Jun 2020 14:51:45:   Saving to output file... 
+INFO  @ Fri, 05 Jun 2020 14:51:45:   RRA completed. 
+INFO  @ Fri, 05 Jun 2020 14:51:45:    
+INFO  @ Fri, 05 Jun 2020 14:51:45: End command message. 
+DEBUG @ Fri, 05 Jun 2020 14:51:45: Sorting the merged items by positive selection... 
+INFO  @ Fri, 05 Jun 2020 14:51:45: Loading top 10 genes from MageckLibISG_CoVclust.gene.low.txt: CTSL,USP18,CTSL1,COMMD3,ISG15,PLSCR2,GBP6,MED12,RRBP1,GALNT2 
+DEBUG @ Fri, 05 Jun 2020 14:51:45: Column index:3 
+INFO  @ Fri, 05 Jun 2020 14:51:45: Loading top 10 genes from MageckLibISG_CoVclust.gene.high.txt: STAT2,LY6E,IFNAR1,STAT1,IFI6,DAXX,CMTR1,APOL6,HERC5,IQGAP2 
+DEBUG @ Fri, 05 Jun 2020 14:51:45: Column index:9 
+INFO  @ Fri, 05 Jun 2020 14:51:45: Running command: cd ./; /local/gensoft2/adm/bin/Rscript MageckLibISG_CoVclust.R 
+INFO  @ Fri, 05 Jun 2020 14:51:47: Command message: 
+INFO  @ Fri, 05 Jun 2020 14:51:47:   null device  
+INFO  @ Fri, 05 Jun 2020 14:51:47:             1  
+INFO  @ Fri, 05 Jun 2020 14:51:47:   Writing to file MageckLibISG_CoVclust_summary.tex 
+INFO  @ Fri, 05 Jun 2020 14:51:47:   Processing code chunks with options ... 
+INFO  @ Fri, 05 Jun 2020 14:51:47:    1 : keep.source term verbatim (label = funcdef) 
+INFO  @ Fri, 05 Jun 2020 14:51:47:    2 : keep.source term tex (label = tab1) 
+INFO  @ Fri, 05 Jun 2020 14:51:47:    3 : keep.source term verbatim 
+INFO  @ Fri, 05 Jun 2020 14:51:47:    4 : keep.source term verbatim pdf  
+INFO  @ Fri, 05 Jun 2020 14:51:47:    5 : keep.source term verbatim pdf  
+INFO  @ Fri, 05 Jun 2020 14:51:47:    6 : keep.source term verbatim pdf  
+INFO  @ Fri, 05 Jun 2020 14:51:47:    7 : keep.source term verbatim pdf  
+INFO  @ Fri, 05 Jun 2020 14:51:47:    8 : keep.source term verbatim 
+INFO  @ Fri, 05 Jun 2020 14:51:47:    9 : keep.source term verbatim pdf  
+INFO  @ Fri, 05 Jun 2020 14:51:47:   10 : keep.source term verbatim pdf  
+INFO  @ Fri, 05 Jun 2020 14:51:47:   11 : keep.source term verbatim pdf  
+INFO  @ Fri, 05 Jun 2020 14:51:47:   12 : keep.source term verbatim pdf  
+INFO  @ Fri, 05 Jun 2020 14:51:47:    
+INFO  @ Fri, 05 Jun 2020 14:51:47:   You can now run (pdf)latex on ‘MageckLibISG_CoVclust_summary.tex’ 
+INFO  @ Fri, 05 Jun 2020 14:51:47:   Error in texi2dvi("MageckLibISG_CoVclust_summary.tex", pdf = TRUE) :  
+INFO  @ Fri, 05 Jun 2020 14:51:47:     Running 'texi2dvi' on 'MageckLibISG_CoVclust_summary.tex' failed. 
+INFO  @ Fri, 05 Jun 2020 14:51:47:   Execution halted 
+INFO  @ Fri, 05 Jun 2020 14:51:47:    
+INFO  @ Fri, 05 Jun 2020 14:51:47: End command message. 
