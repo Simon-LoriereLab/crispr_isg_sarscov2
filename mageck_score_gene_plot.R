@@ -2,7 +2,7 @@ library(tidyverse)
 library(ggrepel)
 library(cowplot)
 
-scores_df <- read.delim("mageck_analysis/MageckLibISG_CoVclust.gene_summary.txt", header = TRUE, as.is = TRUE)
+scores_df <- read.delim("mageck/MageckLibISG_CoVclust.gene_summary.txt", header = TRUE, as.is = TRUE)
 
 #### user input
 FDR_cutoff <- 0.05
