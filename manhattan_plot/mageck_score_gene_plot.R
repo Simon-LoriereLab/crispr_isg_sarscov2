@@ -2,7 +2,7 @@ library(tidyverse)
 library(ggrepel)
 library(cowplot)
 
-scores_df <- read.delim("mageck/MageckLibISG_CoVclust.gene_summary.txt", header = TRUE, as.is = TRUE)
+scores_df <- read.delim("../mageck/MageckLibISG_CoVclust.gene_summary.txt", header = TRUE, as.is = TRUE)
 
 #### user input
 FDR_cutoff <- 0.05
@@ -74,6 +74,6 @@ p12 <- plot_grid(p1, p2, nrow = 2, ncol = 1)
 
 print(p12)
 
-ggsave(plot = p12, filename = "mageck_score_plot.eps", device = "eps", width = 15, height = 10, units = "cm") ###### EPS format
-ggsave(plot = p12, filename = "mageck_score_plot.pdf", device = "pdf", width = 15, height = 10, units = "cm") ###### PDF format
+#ggsave(plot = p12, filename = "mageck_score_plot.eps", device = "eps", width = 15, height = 10, units = "cm") ###### EPS format
+#ggsave(plot = p12, filename = "mageck_score_plot.pdf", device = "pdf", width = 15, height = 10, units = "cm") ###### PDF format
 ggsave(plot = p12, filename = "mageck_score_plot.png", device = "png", width = 15, height = 10, units = "cm") ###### PNG format
