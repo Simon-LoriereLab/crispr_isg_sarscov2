@@ -14,5 +14,6 @@ MAGeCK input data [read_count_table.txt](./mageck/read_count_table.txt) and defa
 
 Sample description, raw sequencing data and mapping analysis are provided in GEO (GSE173418).
 
-[Data](./mageck) - [![License: CC BY 4.0](https://licensebuttons.net/l/by/4.0/80x15.png)](https://creativecommons.org/licenses/by/4.0/).
-[Manhattan plot](./manhattan_plot/mageck_score_gene_plot.R) - [![License: GPL v3](https://img.shields.io/badge/License-GPLv3-blue.svg)](https://www.gnu.org/licenses/gpl-3.0)
+[__Data__](./mageck) - [![License: CC BY 4.0](https://licensebuttons.net/l/by/4.0/80x15.png)](https://creativecommons.org/licenses/by/4.0/).
+
+[__Manhattan plot__](./manhattan_plot/mageck_score_gene_plot.R) - [![License: GPL v3](https://img.shields.io/badge/License-GPLv3-blue.svg)](https://www.gnu.org/licenses/gpl-3.0)
